@@ -5,11 +5,11 @@ A Node.js script that sends a text string to the [Yandex Translate API](https://
 
 ## About
 
-This script was started in November 2015 as a proof of concept for a Twitter bot, but I couldn't figure out what source text to feed it, so I stopped working on it. It sat dormant until the folks at [Popula](https://popula.com) mentioned they were going to run [a piece on machine translation](https://popula.com/2018/07/29/machine-translation/‎) and I mentioned having written this script. They came up with the idea of running the entirety of that article through my script, and I loved the idea, so I agreed and finished up this script.
+This script was started in November 2015 as a proof of concept for a Twitter bot, but I couldn't figure out what source text to feed it, so I stopped working on it. It sat dormant until the folks at [Popula](https://popula.com) mentioned they were going to run [a piece on machine translation](https://popula.com/2018/07/29/machine-translation/) and I mentioned having written this script. They came up with the idea of running the entirety of that article through my script, and I loved the idea, so I agreed and finished up this script.
 
-The original article, by Giovanni Tiso: **[Machine Translation](https://popula.com/2018/07/29/machine-translation/‎)**
+The original article, by Giovanni Tiso: **[Machine Translation](https://popula.com/2018/07/29/machine-translation/)**
 
-And my overtranslation: **[Machine Translation of ‘Machine Translation’](https://popula.com/2018/07/29/machine-translation-of-machine-translation/‎)**
+And my overtranslation: **[Machine Translation of 'Machine Translation'](https://popula.com/2018/07/29/machine-translation-of-machine-translation/)**
 
 
 ## Instructions
