@@ -16,7 +16,7 @@ And my overtranslation: **[Machine Translation of 'Machine Translation'](https:/
 
 If you're interested in running this script yourself, here are some basic instructions for getting it running. Because I'm short on time right now, these are not as complete as I'd like. Please [open a new issue](https://github.com/matthewmcvickar/overtranslator/issues/new) on this repo or [email me](mailto:matthew@matthewmcvickar.com) if you have any trouble.
 
-1. [Install Node.js](https://nodejs.org/en/download/) on your computer.
+1. [Install Node.js](https://nodejs.org/en/download/).
 
 1. Download or clone this repo.
 
