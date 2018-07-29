@@ -110,6 +110,8 @@ function chooseLanguages() {
         // Mutate the array from being a collection where the language codes are
         // the keys and the langauge names are the values to an array of arrays
         // that can be properly shuffled and then referred to by array indexes.
+        //
+        // So instead of:
         //   languages: {
         //     sv: 'Swedish',
         //     ne: 'Nepali',
