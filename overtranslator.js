@@ -80,7 +80,7 @@ overTranslate(text_to_translate);
 function overTranslate(text) {
   var text = text.trim();
 
-  console.log('\nLET’S OVERTRANSLATE THIS:\n\n', text);
+  console.log('\nLET’S OVERTRANSLATE THIS:\n', text);
 
   chooseLanguages().then(function (languages) {
     doTranslations(text, languages);
@@ -124,6 +124,17 @@ function chooseLanguages() {
         //     [...]
         //
         languages = _.toPairs(languages);
+
+        // Remove the starting language and  some languages that seem to have
+        // trouble with punctuation and break the translation chain.
+        languages = _.filter(languages, function(lang) {
+          return lang[1] !== starting_language_name
+              && lang[1] !== 'Amharic'
+              && lang[1] !== 'Burmese'
+              && lang[1] !== 'Hill Mari'
+              && lang[1] !== 'Malagasy'
+              && lang[1] !== 'Swahili';
+        })
 
         // Just take ten of the languages.
         var languages = _.sampleSize(languages, 10);
