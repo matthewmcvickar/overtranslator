@@ -31,11 +31,10 @@ If you're interested in running this script yourself, here are some basic instru
     npm install
     ```
 
-1. Sign up for a free Yandex account and register a free API key:
-   https://translate.yandex.com/developers/keys
+1. [Sign up for a free Yandex account and register a free API key.](https://translate.yandex.com/developers/keys)
 
 1. Rename the `config-example.js` file in this repo to `config.js` and paste
-   your API key into it].
+   your API key into it.
 
 1. Open the `overtranslator.js` file and change the text in the `const text_to_translate = [...]` block to what you'd like to translate. If you are translating from a language other than English, change the `starting_language_code` and `starting_language_name` variables too.
 
