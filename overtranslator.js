@@ -110,7 +110,7 @@ function chooseLanguages() {
         // Mutate the array from being a collection where the language codes are
         // the keys and the langauge names are the values to an array of arrays
         // that can be properly shuffled and then referred to by array indexes.
-        //   langs: {
+        //   languages: {
         //     sv: 'Swedish',
         //     ne: 'Nepali',
         //     si: 'Sinhalese'
@@ -125,7 +125,7 @@ function chooseLanguages() {
         //
         languages = _.toPairs(languages);
 
-        // Remove the starting language and  some languages that seem to have
+        // Remove the starting language and some languages that seem to have
         // trouble with punctuation and break the translation chain.
         languages = _.filter(languages, function(lang) {
           return lang[1] !== starting_language_name
@@ -155,19 +155,19 @@ function doTranslations(text, languages) {
 
   var urls = [
     baseURL + '&lang=' + starting_language_code + '-' + languages[0][0],
-    baseURL + '&lang=' + languages[0][0]  + '-' + languages[1][0],
-    baseURL + '&lang=' + languages[1][0]  + '-' + languages[2][0],
-    baseURL + '&lang=' + languages[2][0]  + '-' + languages[3][0],
-    baseURL + '&lang=' + languages[3][0]  + '-' + languages[4][0],
-    baseURL + '&lang=' + languages[4][0]  + '-' + languages[5][0],
-    baseURL + '&lang=' + languages[5][0]  + '-' + languages[6][0],
-    baseURL + '&lang=' + languages[6][0]  + '-' + languages[7][0],
-    baseURL + '&lang=' + languages[7][0]  + '-' + languages[8][0],
-    baseURL + '&lang=' + languages[8][0]  + '-' + languages[9][0],
-    baseURL + '&lang=' + languages[9][0]  + '-' + starting_language_code
+    baseURL + '&lang=' + languages[0][0] + '-' + languages[1][0],
+    baseURL + '&lang=' + languages[1][0] + '-' + languages[2][0],
+    baseURL + '&lang=' + languages[2][0] + '-' + languages[3][0],
+    baseURL + '&lang=' + languages[3][0] + '-' + languages[4][0],
+    baseURL + '&lang=' + languages[4][0] + '-' + languages[5][0],
+    baseURL + '&lang=' + languages[5][0] + '-' + languages[6][0],
+    baseURL + '&lang=' + languages[6][0] + '-' + languages[7][0],
+    baseURL + '&lang=' + languages[7][0] + '-' + languages[8][0],
+    baseURL + '&lang=' + languages[8][0] + '-' + languages[9][0],
+    baseURL + '&lang=' + languages[9][0] + '-' + starting_language_code
   ];
 
-  doATranslation(text, urls[0], starting_language_name, languages[0][1] )
+  doATranslation(text, urls[0], starting_language_name, languages[0][1])
   .then( textTranslated1  => doATranslation(textTranslated1,  urls[1],  languages[0][1], languages[1][1]        ) )
   .then( textTranslated2  => doATranslation(textTranslated2,  urls[2],  languages[1][1], languages[2][1]        ) )
   .then( textTranslated3  => doATranslation(textTranslated3,  urls[3],  languages[2][1], languages[3][1]        ) )
@@ -193,7 +193,7 @@ function doATranslation(text, url, from_language_name, to_language_name) {
   return new Promise (function (resolve) {
     request(requestURL, function(error, response, body) {
       if (error) {
-        console.log('\n\n====\n\nERROR:\n', error);
+        console.log('\nERROR:\n', error);
       }
 
       else if (body === '') {
@@ -213,5 +213,5 @@ function doATranslation(text, url, from_language_name, to_language_name) {
 }
 
 function failureCallback(error) {
-  console.log('\n\n====\n\nERROR:\n\n', error);
+  console.log('\nERROR:\n', error);
 }
