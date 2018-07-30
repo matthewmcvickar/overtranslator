@@ -52,7 +52,7 @@ const text_format = 'plain';
 // The text you want to overtranslate.
 const text_to_translate = `
 
-I don't think I showed you how it ouputs the text.
+A story about words that change into other words and about words that change meaning when they stay the same.
 
 `;
 
