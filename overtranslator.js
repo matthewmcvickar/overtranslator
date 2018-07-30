@@ -52,7 +52,7 @@ const text_format = 'plain';
 // The text you want to overtranslate.
 const text_to_translate = `
 
-A story about words that change into other words and about words that change meaning when they stay the same.
+I don't think I showed you how it ouputs the text.
 
 `;
 
@@ -135,6 +135,7 @@ function chooseLanguages() {
               && lang[1] !== 'Burmese'
               && lang[1] !== 'Hill Mari'
               && lang[1] !== 'Malagasy'
+              && lang[1] !== 'Malayalam'
               && lang[1] !== 'Swahili';
         })
 
